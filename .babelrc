@@ -1,0 +1,28 @@
+{
+  "presets": [
+    "@babel/preset-react",
+    [
+      "@babel/preset-env",
+      {
+        "modules": false,
+        "targets": {
+          "node": "10.1"
+        },
+        "useBuiltIns": false,
+        "shippedProposals": true,
+        "debug": true,
+        "loose": false
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "helpers": false,
+        "regenerator": true
+      }
+    ],
+    "@babel/plugin-syntax-dynamic-import"
+  ]
+}
